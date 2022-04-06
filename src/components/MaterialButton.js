@@ -1,8 +1,26 @@
-import React from 'react';
-import { Stack, Button, IconButton, ButtonGroup } from '@mui/material';
+import React, { useState } from 'react';
+import {
+  Stack,
+  Button,
+  IconButton,
+  ButtonGroup,
+  ToggleButtonGroup,
+  ToggleButton,
+} from '@mui/material';
 import GoogleIcon from '@mui/icons-material/Google';
+import FormatBoldIcon from '@mui/icons-material/FormatBold';
+import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
 
 const MaterialButton = () => {
+  const [formats, setFormats] = useState([]);
+
+  console.log({ formats });
+
+  const handleFormat = (event, updatedFormat) => {
+    setFormats(updatedFormat);
+  };
+
   return (
     <Stack spacing={4}>
       <Stack spacing={2} direction="row">
@@ -119,6 +137,27 @@ const MaterialButton = () => {
           <Button onClick={() => alert('Center Clicked')}>Center</Button>
           <Button onClick={() => alert('Right Clicked')}>Right</Button>
         </ButtonGroup>
+      </Stack>
+      <Stack spacing={2} direction="row">
+        <ToggleButtonGroup
+          aria-label="text formating"
+          value={formats}
+          onChange={handleFormat}
+          size="medium"
+          color="success"
+          orientation="vertical"
+          exclusive
+        >
+          <ToggleButton value="bold" aria-label="bold">
+            <FormatBoldIcon />
+          </ToggleButton>
+          <ToggleButton value="italic" aria-label="italic">
+            <FormatItalicIcon />
+          </ToggleButton>
+          <ToggleButton value="underlined" aria-label="underlined">
+            <FormatUnderlinedIcon />
+          </ToggleButton>
+        </ToggleButtonGroup>
       </Stack>
     </Stack>
   );
