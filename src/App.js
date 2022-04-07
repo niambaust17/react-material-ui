@@ -8,6 +8,7 @@ import MaterialRating from './components/MaterialRating.js';
 import MaterialAutoComplete from './components/MaterialAutoComplete.js';
 import MaterialBox from './components/MaterialBox.js';
 import MaterialStack from './components/MaterialStack.js';
+import MaterialGrid from './components/MaterialGrid.js';
 
 export default function App() {
   return (
@@ -19,7 +20,8 @@ export default function App() {
       {/* <MaterialRating /> */}
       {/* <MaterialAutoComplete /> */}
       {/* <MaterialBox /> */}
-      <MaterialStack />
+      {/* <MaterialStack /> */}
+      <MaterialGrid />
     </div>
   );
 }
