@@ -11,6 +11,7 @@ import {
   FormHelperText,
   FormControlLabel,
   Radio,
+  Switch,
   Checkbox,
 } from '@mui/material';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
@@ -21,15 +22,18 @@ const MaterialButton = () => {
   const [skills, setSkills] = useState([]);
   const [experience, setExperience] = useState('');
   const [acceptTnC, setAcceptTnC] = useState(false);
+  const [checked, setChecked] = useState(false);
   console.log({ age });
   console.log({ experience });
   console.log({ acceptTnC });
   console.log({ skills });
+  console.log({ checked });
 
   const handleChange = (e) => {
     // setAge(e.target.value);
     // setExperience(e.target.value);
-    setAcceptTnC(e.target.checked);
+    // setAcceptTnC(e.target.checked);
+    setChecked(e.target.checked);
   };
 
   const handleSkillChange = (e) => {
@@ -43,13 +47,6 @@ const MaterialButton = () => {
 
   return (
     <Box width="250px">
-      <Box>
-        <Typography variant="h4">Check Box</Typography>
-        <FormControlLabel
-          control={<Checkbox checked={acceptTnC} onChange={handleChange} />}
-          label="I accept all term and condition"
-        />
-      </Box>
       <Box>
         <Typography variant="h4">Radio Button</Typography>
         <FormControl>
@@ -74,6 +71,7 @@ const MaterialButton = () => {
         </FormControl>
       </Box>
       <Box>
+        <Typography variant="h4">Select</Typography>
         <TextField
           label="Select Age"
           select
@@ -91,6 +89,13 @@ const MaterialButton = () => {
         </TextField>
       </Box>
       <Box>
+        <Typography variant="h4">Check Box</Typography>
+        <FormControlLabel
+          control={<Checkbox checked={acceptTnC} onChange={handleChange} />}
+          label="I accept all term and condition"
+        />
+      </Box>
+      <Box>
         <Checkbox
           checked={acceptTnC}
           icon={<BookmarkBorderIcon />}
@@ -99,9 +104,9 @@ const MaterialButton = () => {
         />
       </Box>
       <Box>
-        <FormControl error> 
+        <FormControl error>
           <FormLabel>Skills</FormLabel>
-          <FormGroup row size='small'>
+          <FormGroup row size="small">
             <FormControlLabel
               control={
                 <Checkbox
@@ -135,6 +140,20 @@ const MaterialButton = () => {
           </FormGroup>
           <FormHelperText>Be careful</FormHelperText>
         </FormControl>
+      </Box>
+      <Box>
+        <Typography variant="h4">Switch</Typography>
+        <FormControlLabel
+          control={
+            <Switch
+              checked={checked}
+              onChange={handleChange}
+              size="small"
+              color="success"
+            />
+          }
+          label="Dark Mode"
+        />
       </Box>
     </Box>
   );
