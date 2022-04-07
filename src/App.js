@@ -9,6 +9,7 @@ import MaterialAutoComplete from './components/MaterialAutoComplete.js';
 import MaterialBox from './components/MaterialBox.js';
 import MaterialStack from './components/MaterialStack.js';
 import MaterialGrid from './components/MaterialGrid.js';
+import MaterialPaper from './components/MaterialPaper.js';
 
 export default function App() {
   return (
@@ -21,7 +22,8 @@ export default function App() {
       {/* <MaterialAutoComplete /> */}
       {/* <MaterialBox /> */}
       {/* <MaterialStack /> */}
-      <MaterialGrid />
+      {/* <MaterialGrid /> */}
+      <MaterialPaper />
     </div>
   );
 }
