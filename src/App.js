@@ -11,6 +11,7 @@ import MaterialStack from './components/MaterialStack.js';
 import MaterialGrid from './components/MaterialGrid.js';
 import MaterialPaper from './components/MaterialPaper.js';
 import MaterialCard from './components/MaterialCard.js';
+import MaterialAccordion from './components/MaterialAccordion.js';
 
 export default function App() {
   return (
@@ -25,7 +26,8 @@ export default function App() {
       {/* <MaterialStack /> */}
       {/* <MaterialGrid /> */}
       {/* <MaterialPaper /> */}
-      <MaterialCard />
+      {/* <MaterialCard /> */}
+      <MaterialAccordion />
     </div>
   );
 }
