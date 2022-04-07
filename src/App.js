@@ -10,6 +10,7 @@ import MaterialBox from './components/MaterialBox.js';
 import MaterialStack from './components/MaterialStack.js';
 import MaterialGrid from './components/MaterialGrid.js';
 import MaterialPaper from './components/MaterialPaper.js';
+import MaterialCard from './components/MaterialCard.js';
 
 export default function App() {
   return (
@@ -23,7 +24,8 @@ export default function App() {
       {/* <MaterialBox /> */}
       {/* <MaterialStack /> */}
       {/* <MaterialGrid /> */}
-      <MaterialPaper />
+      {/* <MaterialPaper /> */}
+      <MaterialCard />
     </div>
   );
 }
