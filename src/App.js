@@ -5,6 +5,7 @@ import MaterialButton from './components/MaterialButton.js';
 import MaterialTextField from './components/MaterialTextField.js';
 import MaterialSelect from './components/MaterialSelect.js';
 import MaterialRating from './components/MaterialRating.js';
+import MaterialAutoComplete from './components/MaterialAutoComplete.js';
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
       {/* <MaterialButton/> */}
       {/* <MaterialTextField /> */}
       {/* <MaterialSelect /> */}
-      <MaterialRating />
+      {/* <MaterialRating /> */}
+      <MaterialAutoComplete />
     </div>
   );
 }
