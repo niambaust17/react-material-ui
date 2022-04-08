@@ -17,6 +17,7 @@ import MaterialNavbar from './components/MaterialNavbar.js';
 import MaterialBreadcrumbs from './components/MaterialBreadcrumbs.js';
 import MaterialBottomNavigation from './components/MaterialBottomNavigation.js';
 import MaterialAvatar from './components/MaterialAvatar.js';
+import MaterialBadge from './components/MaterialBadge.js';
 
 export default function App() {
   return (
@@ -29,7 +30,7 @@ export default function App() {
       {/* <MaterialAutoComplete /> */}
       {/* <MaterialBox /> */}
       {/* <MaterialStack /> */}
-      {/* <MaterialGrid /> */}
+      <MaterialGrid />
       {/* <MaterialPaper /> */}
       {/* <MaterialCard /> */}
       {/* <MaterialAccordion /> */}
@@ -37,7 +38,8 @@ export default function App() {
       {/* <MaterialNavbar /> */}
       {/* <MaterialBreadcrumbs /> */}
       {/* <MaterialBottomNavigation /> */}
-      <MaterialAvatar />
+      {/* <MaterialAvatar /> */}
+      {/* <MaterialBadge /> */}
     </div>
   );
 }
