@@ -16,6 +16,7 @@ import MaterialImageList from './components/MaterialImageList.js';
 import MaterialNavbar from './components/MaterialNavbar.js';
 import MaterialBreadcrumbs from './components/MaterialBreadcrumbs.js';
 import MaterialBottomNavigation from './components/MaterialBottomNavigation.js';
+import MaterialAvatar from './components/MaterialAvatar.js';
 
 export default function App() {
   return (
@@ -35,7 +36,8 @@ export default function App() {
       {/* <MaterialImageList /> */}
       {/* <MaterialNavbar /> */}
       {/* <MaterialBreadcrumbs /> */}
-      <MaterialBottomNavigation />
+      {/* <MaterialBottomNavigation /> */}
+      <MaterialAvatar />
     </div>
   );
 }
