@@ -15,6 +15,7 @@ import MaterialAccordion from './components/MaterialAccordion.js';
 import MaterialImageList from './components/MaterialImageList.js';
 import MaterialNavbar from './components/MaterialNavbar.js';
 import MaterialBreadcrumbs from './components/MaterialBreadcrumbs.js';
+import MaterialBottomNavigation from './components/MaterialBottomNavigation.js';
 
 export default function App() {
   return (
@@ -33,7 +34,8 @@ export default function App() {
       {/* <MaterialAccordion /> */}
       {/* <MaterialImageList /> */}
       {/* <MaterialNavbar /> */}
-      <MaterialBreadcrumbs/>
+      {/* <MaterialBreadcrumbs /> */}
+      <MaterialBottomNavigation />
     </div>
   );
 }
