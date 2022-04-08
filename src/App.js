@@ -13,6 +13,7 @@ import MaterialPaper from './components/MaterialPaper.js';
 import MaterialCard from './components/MaterialCard.js';
 import MaterialAccordion from './components/MaterialAccordion.js';
 import MaterialImageList from './components/MaterialImageList.js';
+import MaterialNavbar from './components/MaterialNavbar.js';
 
 export default function App() {
   return (
@@ -29,7 +30,8 @@ export default function App() {
       {/* <MaterialPaper /> */}
       {/* <MaterialCard /> */}
       {/* <MaterialAccordion /> */}
-      <MaterialImageList />
+      {/* <MaterialImageList /> */}
+      <MaterialNavbar />
     </div>
   );
 }
