@@ -1,5 +1,7 @@
 import React from 'react';
 import './style.css';
+import { LocalizationProvider } from '@mui/lab';
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import MaterialTypography from './components/MaterialTypography.js';
 import MaterialButton from './components/MaterialButton.js';
 import MaterialTextField from './components/MaterialTextField.js';
@@ -31,35 +33,37 @@ import MaterialDate from './components/MaterialDate.js';
 
 export default function App() {
   return (
-    <div className="App">
-      {/* <MaterialTypography/> */}
-      {/* <MaterialButton/> */}
-      {/* <MaterialTextField /> */}
-      {/* <MaterialSelect /> */}
-      {/* <MaterialRating /> */}
-      {/* <MaterialAutoComplete /> */}
-      {/* <MaterialBox /> */}
-      {/* <MaterialStack /> */}
-      {/* <MaterialGrid /> */}
-      {/* <MaterialPaper /> */}
-      {/* <MaterialCard /> */}
-      {/* <MaterialAccordion /> */}
-      {/* <MaterialImageList /> */}
-      {/* <MaterialNavbar /> */}
-      {/* <MaterialBreadcrumbs /> */}
-      {/* <MaterialBottomNavigation /> */}
-      {/* <MaterialAvatar /> */}
-      {/* <MaterialBadge /> */}
-      {/* <MaterialList /> */}
-      {/* <MaterialChip /> */}
-      {/* <MaterialTable /> */}
-      {/* <MaterialAlert /> */}
-      {/* <MaterialSnackbar /> */}
-      {/* <MaterialDialog /> */}
-      {/* <MaterialProgress /> */}
-      {/* <MaterialSkeleton /> */}
-      <MaterialLoadingButton />
-      {/* <MaterialDate /> */}
-    </div>
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
+      <div className="App">
+        {/* <MaterialTypography/> */}
+        {/* <MaterialButton/> */}
+        {/* <MaterialTextField /> */}
+        {/* <MaterialSelect /> */}
+        {/* <MaterialRating /> */}
+        {/* <MaterialAutoComplete /> */}
+        {/* <MaterialBox /> */}
+        {/* <MaterialStack /> */}
+        {/* <MaterialGrid /> */}
+        {/* <MaterialPaper /> */}
+        {/* <MaterialCard /> */}
+        {/* <MaterialAccordion /> */}
+        {/* <MaterialImageList /> */}
+        {/* <MaterialNavbar /> */}
+        {/* <MaterialBreadcrumbs /> */}
+        {/* <MaterialBottomNavigation /> */}
+        {/* <MaterialAvatar /> */}
+        {/* <MaterialBadge /> */}
+        {/* <MaterialList /> */}
+        {/* <MaterialChip /> */}
+        {/* <MaterialTable /> */}
+        {/* <MaterialAlert /> */}
+        {/* <MaterialSnackbar /> */}
+        {/* <MaterialDialog /> */}
+        {/* <MaterialProgress /> */}
+        {/* <MaterialSkeleton /> */}
+        {/* <MaterialLoadingButton /> */}
+        <MaterialDate />
+      </div>
+    </LocalizationProvider>
   );
 }
