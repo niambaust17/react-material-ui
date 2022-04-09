@@ -23,6 +23,11 @@ import MaterialChip from './components/MaterialChip.js';
 import MaterialTable from './components/MaterialTable.js';
 import MaterialAlert from './components/MaterialAlert.js';
 import MaterialSnackbar from './components/MaterialSnackbar.js';
+import MaterialDialog from './components/MaterialDialog.js';
+import MaterialProgress from './components/MaterialProgress.js';
+import MaterialSkeleton from './components/MaterialSkeleton.js';
+import MaterialLoadingButton from './components/MaterialLoadingButton.js';
+import MaterialDate from './components/MaterialDate.js';
 
 export default function App() {
   return (
@@ -49,7 +54,12 @@ export default function App() {
       {/* <MaterialChip /> */}
       {/* <MaterialTable /> */}
       {/* <MaterialAlert /> */}
-      <MaterialSnackbar />
+      {/* <MaterialSnackbar /> */}
+      {/* <MaterialDialog /> */}
+      {/* <MaterialProgress /> */}
+      {/* <MaterialSkeleton /> */}
+      <MaterialLoadingButton />
+      {/* <MaterialDate /> */}
     </div>
   );
 }
