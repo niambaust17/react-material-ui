@@ -21,6 +21,8 @@ import MaterialBadge from './components/MaterialBadge.js';
 import MaterialList from './components/MaterialList.js';
 import MaterialChip from './components/MaterialChip.js';
 import MaterialTable from './components/MaterialTable.js';
+import MaterialAlert from './components/MaterialAlert.js';
+import MaterialSnackbar from './components/MaterialSnackbar.js';
 
 export default function App() {
   return (
@@ -45,7 +47,9 @@ export default function App() {
       {/* <MaterialBadge /> */}
       {/* <MaterialList /> */}
       {/* <MaterialChip /> */}
-      <MaterialTable />
+      {/* <MaterialTable /> */}
+      {/* <MaterialAlert /> */}
+      <MaterialSnackbar />
     </div>
   );
 }
