@@ -19,6 +19,7 @@ import MaterialBottomNavigation from './components/MaterialBottomNavigation.js';
 import MaterialAvatar from './components/MaterialAvatar.js';
 import MaterialBadge from './components/MaterialBadge.js';
 import MaterialList from './components/MaterialList.js';
+import MaterialChip from './components/MaterialChip.js';
 
 export default function App() {
   return (
@@ -41,7 +42,8 @@ export default function App() {
       {/* <MaterialBottomNavigation /> */}
       {/* <MaterialAvatar /> */}
       {/* <MaterialBadge /> */}
-      <MaterialList />
+      {/* <MaterialList /> */}
+      <MaterialChip />
     </div>
   );
 }
