@@ -20,6 +20,7 @@ import MaterialAvatar from './components/MaterialAvatar.js';
 import MaterialBadge from './components/MaterialBadge.js';
 import MaterialList from './components/MaterialList.js';
 import MaterialChip from './components/MaterialChip.js';
+import MaterialTable from './components/MaterialTable.js';
 
 export default function App() {
   return (
@@ -43,7 +44,8 @@ export default function App() {
       {/* <MaterialAvatar /> */}
       {/* <MaterialBadge /> */}
       {/* <MaterialList /> */}
-      <MaterialChip />
+      {/* <MaterialChip /> */}
+      <MaterialTable />
     </div>
   );
 }
