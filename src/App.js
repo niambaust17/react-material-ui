@@ -34,6 +34,7 @@ import MaterialDateRange from './components/MaterialDateRange.js';
 import MaterialTab from './components/MaterialTab.js';
 import MaterialTimeline from './components/MaterialTimeline.js';
 import MaterialMasonry from './components/MaterialMasonry.js';
+import MaterialResponsive from './components/MaterialResponsive.js';
 
 export default function App() {
   return (
@@ -70,7 +71,8 @@ export default function App() {
         {/* <MaterialDateRange /> */}
         {/* <MaterialTab /> */}
         {/* <MaterialTimeline /> */}
-        <MaterialMasonry />
+        {/* <MaterialMasonry /> */}
+        <MaterialResponsive />
       </div>
     </LocalizationProvider>
   );
