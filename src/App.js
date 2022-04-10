@@ -32,6 +32,8 @@ import MaterialLoadingButton from './components/MaterialLoadingButton.js';
 import MaterialDate from './components/MaterialDate.js';
 import MaterialDateRange from './components/MaterialDateRange.js';
 import MaterialTab from './components/MaterialTab.js';
+import MaterialTimeline from './components/MaterialTimeline.js';
+import MaterialMasonry from './components/MaterialMasonry.js';
 
 export default function App() {
   return (
@@ -66,7 +68,9 @@ export default function App() {
         {/* <MaterialLoadingButton /> */}
         {/* <MaterialDate /> */}
         {/* <MaterialDateRange /> */}
-        <MaterialTab />
+        {/* <MaterialTab /> */}
+        {/* <MaterialTimeline /> */}
+        <MaterialMasonry />
       </div>
     </LocalizationProvider>
   );
